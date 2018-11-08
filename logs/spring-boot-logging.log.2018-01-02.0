@@ -1,0 +1,1059 @@
+2018-01-02 09:55:48.001  INFO 12648 --- [main] com.netmatch.Application                 : Starting Application on pc01-PC with PID 12648 (E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes started by Administrator in E:\IntellijIDEAworkspace\girl)
+2018-01-02 09:55:48.002  INFO 12648 --- [main] com.netmatch.Application                 : The following profiles are active: dev
+2018-01-02 09:55:48.203  INFO 12648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b927fb: startup date [Tue Jan 02 09:55:48 CST 2018]; root of context hierarchy
+2018-01-02 09:55:48.722  INFO 12648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'redisCacheManager' with a different definition: replacing [Generic bean: class [com.netmatch.core.redis.RedisCacheManager]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\core\redis\RedisCacheManager.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfiguration; factoryMethodName=redisCacheManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/netmatch/core/shiro/ShiroConfiguration.class]]
+2018-01-02 09:55:48.722  INFO 12648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'redisSessionDAO' with a different definition: replacing [Generic bean: class [com.netmatch.core.redis.RedisSessionDAO]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\core\redis\RedisSessionDAO.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfiguration; factoryMethodName=redisSessionDAO; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/netmatch/core/shiro/ShiroConfiguration.class]]
+2018-01-02 09:55:48.722  INFO 12648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'customSessionListener' with a different definition: replacing [Generic bean: class [com.netmatch.core.shiro.CustomSessionListener]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\core\shiro\CustomSessionListener.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfiguration; factoryMethodName=customSessionListener; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/netmatch/core/shiro/ShiroConfiguration.class]]
+2018-01-02 09:55:48.821  INFO 12648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-02 09:55:49.007  WARN 12648 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-02 09:55:49.148  INFO 12648 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'apiFilter' with a different definition: replacing [Generic bean: class [com.netmatch.filter.ApiFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\filter\ApiFilter.class]] with [Root bean: class [org.springframework.boot.web.servlet.FilterRegistrationBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-01-02 09:55:49.172  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.netmatch.core.shiro.ShiroConfiguration$$EnhancerBySpringCGLIB$$577575d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:49.240  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminHashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:49.267  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:49.366  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:49.408  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:49.408  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myBatisConfig' of type [com.netmatch.core.MyBatisConfig$$EnhancerBySpringCGLIB$$6f7bf3bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.322  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.375  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.377  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.379  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'imageMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.380  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'imageMapper' of type [com.sun.proxy.$Proxy68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.380  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'imageService' of type [com.netmatch.service.common.ImageService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.381  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminService' of type [com.netmatch.service.console.AdminService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.405  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.407  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMapper' of type [com.sun.proxy.$Proxy69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.408  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleService' of type [com.netmatch.service.console.RoleService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.433  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.434  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.434  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuService' of type [com.netmatch.service.console.MenuService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.435  INFO 12648 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 09:55:51.435  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminShiroRealm' of type [com.netmatch.core.shiro.AdminShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.436  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.463  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'memberMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.464  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'memberMapper' of type [com.sun.proxy.$Proxy71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.464  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'memberService' of type [com.netmatch.service.member.MemberService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.464  INFO 12648 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 09:55:51.464  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'customShiroRealm' of type [com.netmatch.core.shiro.CustomShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.468  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authenticationStrategy' of type [org.apache.shiro.authc.pam.FirstSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.499  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfiguration' of type [com.netmatch.core.redis.RedisConfiguration$$EnhancerBySpringCGLIB$$22092844] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.503  INFO 12648 --- [main] uration$$EnhancerBySpringCGLIB$$22092844 : redisTemplatet注入成功！！
+2018-01-02 09:55:51.522  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getJedisPoolConfig' of type [redis.clients.jedis.JedisPoolConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.523  INFO 12648 --- [main] uration$$EnhancerBySpringCGLIB$$22092844 : JedisConnectionFactory注入成功！！
+2018-01-02 09:55:51.539  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jedisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.555  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRedisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.556  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [com.netmatch.core.redis.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.559  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'customSessionListener' of type [com.netmatch.core.shiro.CustomSessionListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.567  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.575  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.611  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.627  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$30a1d479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.661  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.666  INFO 12648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e78f9e5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 09:55:51.932  INFO 12648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2018-01-02 09:55:51.939  INFO 12648 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-02 09:55:51.939  INFO 12648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-01-02 09:55:52.044  INFO 12648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-02 09:55:52.044  INFO 12648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3842 ms
+2018-01-02 09:55:52.628  INFO 12648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-02 09:55:52.628  INFO 12648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'apiFilter' to urls: [/api/member/*]
+2018-01-02 09:55:52.628  INFO 12648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shirFilter' to: [/*]
+2018-01-02 09:55:52.628  INFO 12648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-02 09:55:53.076  INFO 12648 --- [main] uration$$EnhancerBySpringCGLIB$$22092844 : JedisPool注入成功！！
+2018-01-02 09:55:53.083  INFO 12648 --- [main] uration$$EnhancerBySpringCGLIB$$22092844 : cacheManager注入成功！！
+2018-01-02 09:55:53.204  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/member/index],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.api.ApiMemberController.index(javax.servlet.http.HttpServletRequest)
+2018-01-02 09:55:53.204  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/oauth/token],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.api.ApiPublicController.doLogin(com.netmatch.model.valid.ValidMember,org.springframework.validation.BindingResult)
+2018-01-02 09:55:53.206  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.AdminController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.206  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/delete],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.delete(java.lang.String[])
+2018-01-02 09:55:53.206  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.list(com.netmatch.model.console.Admin)
+2018-01-02 09:55:53.206  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/save],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.save(com.netmatch.model.console.Admin,org.springframework.validation.BindingResult)
+2018-01-02 09:55:53.206  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/from],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.AdminController.from(com.netmatch.model.console.Admin,org.springframework.ui.Model)
+2018-01-02 09:55:53.206  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/savepwd],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.editPwd(java.lang.String,java.lang.String)
+2018-01-02 09:55:53.207  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/upload/index]}" onto public java.lang.String com.netmatch.controller.console.FileUploadController.index()
+2018-01-02 09:55:53.207  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/log/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.LogController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.207  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/log/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.LogController.list(com.netmatch.model.console.Log)
+2018-01-02 09:55:53.208  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MainController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.208  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/main],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MainController.main()
+2018-01-02 09:55:53.208  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/main],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MainController.right(org.springframework.ui.Model)
+2018-01-02 09:55:53.211  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/wapper],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MainController.wapper()
+2018-01-02 09:55:53.213  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MenuController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.214  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/from],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MenuController.add(com.netmatch.model.console.Menu,org.springframework.ui.Model)
+2018-01-02 09:55:53.214  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/delete],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.delete(java.lang.String[])
+2018-01-02 09:55:53.214  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.list()
+2018-01-02 09:55:53.214  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/save],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.save(com.netmatch.model.console.Menu,org.springframework.validation.BindingResult)
+2018-01-02 09:55:53.214  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/listorder],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.updateOrder(java.lang.String,java.lang.Integer)
+2018-01-02 09:55:53.215  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/logout],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.PublicController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-01-02 09:55:53.215  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/403]}" onto public java.lang.String com.netmatch.controller.console.PublicController.unauthorizedRole()
+2018-01-02 09:55:53.215  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/login],methods=[POST]}" onto public java.lang.String com.netmatch.controller.console.PublicController.loginPost(com.netmatch.model.valid.ValidAdmin,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest)
+2018-01-02 09:55:53.215  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/login],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.PublicController.loginForm()
+2018-01-02 09:55:53.217  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.RoleController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.217  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/delete],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.delete(java.lang.String[])
+2018-01-02 09:55:53.217  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.list(com.netmatch.model.console.Role)
+2018-01-02 09:55:53.217  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/save],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.save(com.netmatch.model.console.Role,org.springframework.validation.BindingResult)
+2018-01-02 09:55:53.218  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/from],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.RoleController.from(com.netmatch.model.console.Role,org.springframework.ui.Model)
+2018-01-02 09:55:53.218  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/grant],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.grant(java.lang.String,java.lang.String[])
+2018-01-02 09:55:53.218  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/combobox],methods=[POST || GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.comboBox()
+2018-01-02 09:55:53.218  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/menutree],methods=[POST || GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.comboTree(java.lang.String)
+2018-01-02 09:55:53.218  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/grant],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.RoleController.grantForm(java.lang.String,org.springframework.ui.Model)
+2018-01-02 09:55:53.218  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/menulist],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.menulist(java.lang.String)
+2018-01-02 09:55:53.219  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/regions/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.sys.RegionsController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.219  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/regions/list],methods=[POST],produces=[html/text;charset=UTF-8]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.sys.RegionsController.list(com.netmatch.model.console.sys.Regions)
+2018-01-02 09:55:53.222  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/regions/list2],methods=[POST],produces=[html/text;charset=UTF-8]}" onto public java.lang.String com.netmatch.controller.console.sys.RegionsController.list2(com.netmatch.model.console.sys.Regions)
+2018-01-02 09:55:53.222  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/image/fileupload],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.netmatch.controller.console.UploadImgController.uploadHeadImage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2018-01-02 09:55:53.222  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/member/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.UserController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.223  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/member/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.UserController.list(com.netmatch.model.member.Member)
+2018-01-02 09:55:53.223  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[]}" onto public java.lang.String com.netmatch.controller.IndexController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.223  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String com.netmatch.controller.IndexController.forbidden()
+2018-01-02 09:55:53.223  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/index]}" onto public java.lang.String com.netmatch.controller.member.HomeController.index(org.springframework.ui.Model)
+2018-01-02 09:55:53.224  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/reg],methods=[GET]}" onto public java.lang.String com.netmatch.controller.member.HomeController.reg()
+2018-01-02 09:55:53.224  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/login],methods=[GET]}" onto public java.lang.String com.netmatch.controller.member.HomeController.login()
+2018-01-02 09:55:53.224  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/logout],methods=[GET]}" onto public java.lang.String com.netmatch.controller.member.MemberController.logout()
+2018-01-02 09:55:53.224  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.member.MemberController.doLogin(com.netmatch.model.valid.ValidMember,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-01-02 09:55:53.224  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/reg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.member.MemberController.doReg(com.netmatch.model.member.Member,org.springframework.validation.BindingResult)
+2018-01-02 09:55:53.227  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-02 09:55:53.227  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-02 09:55:53.281  INFO 12648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 09:55:53.282  INFO 12648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/app/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 09:55:53.659  INFO 12648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b927fb: startup date [Tue Jan 02 09:55:48 CST 2018]; root of context hierarchy
+2018-01-02 09:55:54.731  INFO 12648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-02 09:55:54.733  INFO 12648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-02 09:55:54.738  INFO 12648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-02 09:55:54.777  INFO 12648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2018-01-02 09:55:54.781  INFO 12648 --- [main] com.netmatch.Application                 : Started Application in 7.121 seconds (JVM running for 8.813)
+2018-01-02 09:56:20.214  INFO 12648 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-02 09:56:20.214  INFO 12648 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-02 09:56:20.250  INFO 12648 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-01-02 09:56:20.259  INFO 12648 --- [http-nio-8000-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2018-01-02 09:56:22.976  WARN 12648 --- [http-nio-8000-exec-9] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+2018-01-02 16:32:40.744  INFO 4144 --- [main] com.netmatch.Application                 : Starting Application on pc01-PC with PID 4144 (E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes started by Administrator in E:\IntellijIDEAworkspace\girl)
+2018-01-02 16:32:40.770  INFO 4144 --- [main] com.netmatch.Application                 : The following profiles are active: dev
+2018-01-02 16:32:41.450  INFO 4144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fb61f4a: startup date [Tue Jan 02 16:32:41 CST 2018]; root of context hierarchy
+2018-01-02 16:32:45.657  INFO 4144 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'redisCacheManager' with a different definition: replacing [Generic bean: class [com.netmatch.core.redis.RedisCacheManager]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\core\redis\RedisCacheManager.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfiguration; factoryMethodName=redisCacheManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/netmatch/core/shiro/ShiroConfiguration.class]]
+2018-01-02 16:32:45.659  INFO 4144 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'redisSessionDAO' with a different definition: replacing [Generic bean: class [com.netmatch.core.redis.RedisSessionDAO]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\core\redis\RedisSessionDAO.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfiguration; factoryMethodName=redisSessionDAO; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/netmatch/core/shiro/ShiroConfiguration.class]]
+2018-01-02 16:32:45.660  INFO 4144 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'customSessionListener' with a different definition: replacing [Generic bean: class [com.netmatch.core.shiro.CustomSessionListener]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\core\shiro\CustomSessionListener.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfiguration; factoryMethodName=customSessionListener; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/netmatch/core/shiro/ShiroConfiguration.class]]
+2018-01-02 16:32:45.934  INFO 4144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-02 16:32:46.330  WARN 4144 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-02 16:32:46.636  INFO 4144 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'apiFilter' with a different definition: replacing [Generic bean: class [com.netmatch.filter.ApiFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\IntellijIDEAworkspace\SpringBoot_basicProject\basicProject\target\classes\com\netmatch\filter\ApiFilter.class]] with [Root bean: class [org.springframework.boot.web.servlet.FilterRegistrationBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-01-02 16:32:46.669  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.netmatch.core.shiro.ShiroConfiguration$$EnhancerBySpringCGLIB$$bce08df7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:46.760  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminHashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:46.785  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:46.994  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:47.089  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:47.089  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'myBatisConfig' of type [com.netmatch.core.MyBatisConfig$$EnhancerBySpringCGLIB$$d4e70bde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.081  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.136  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.138  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminMapper' of type [com.sun.proxy.$Proxy67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.141  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'imageMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.141  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'imageMapper' of type [com.sun.proxy.$Proxy68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.141  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'imageService' of type [com.netmatch.service.common.ImageService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.142  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminService' of type [com.netmatch.service.console.AdminService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.165  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.166  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleMapper' of type [com.sun.proxy.$Proxy69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.167  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'roleService' of type [com.netmatch.service.console.RoleService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.189  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.190  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.191  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuService' of type [com.netmatch.service.console.MenuService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.191  INFO 4144 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:32:48.191  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'adminShiroRealm' of type [com.netmatch.core.shiro.AdminShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.192  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'customHashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.218  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'memberMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.219  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'memberMapper' of type [com.sun.proxy.$Proxy71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.219  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'memberService' of type [com.netmatch.service.member.MemberService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.219  INFO 4144 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:32:48.219  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'customShiroRealm' of type [com.netmatch.core.shiro.CustomShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.223  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authenticationStrategy' of type [org.apache.shiro.authc.pam.FirstSuccessfulStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.299  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfiguration' of type [com.netmatch.core.redis.RedisConfiguration$$EnhancerBySpringCGLIB$$87744063] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.306  INFO 4144 --- [main] uration$$EnhancerBySpringCGLIB$$87744063 : redisTemplatet注入成功！！
+2018-01-02 16:32:48.389  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getJedisPoolConfig' of type [redis.clients.jedis.JedisPoolConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.390  INFO 4144 --- [main] uration$$EnhancerBySpringCGLIB$$87744063 : JedisConnectionFactory注入成功！！
+2018-01-02 16:32:48.425  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jedisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.680  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getRedisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.682  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [com.netmatch.core.redis.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.687  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'customSessionListener' of type [com.netmatch.core.shiro.CustomSessionListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.703  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.714  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.769  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.789  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$960cec98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.840  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:48.845  INFO 4144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4cfab67a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-02 16:32:49.309  INFO 4144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2018-01-02 16:32:49.321  INFO 4144 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-02 16:32:49.322  INFO 4144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-01-02 16:32:49.450  INFO 4144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-02 16:32:49.451  INFO 4144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8001 ms
+2018-01-02 16:32:49.691  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-02 16:32:49.691  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'apiFilter' to urls: [/api/member/*]
+2018-01-02 16:32:49.691  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shirFilter' to: [/*]
+2018-01-02 16:32:49.691  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-02 16:32:50.178  INFO 4144 --- [main] uration$$EnhancerBySpringCGLIB$$87744063 : JedisPool注入成功！！
+2018-01-02 16:32:50.184  INFO 4144 --- [main] uration$$EnhancerBySpringCGLIB$$87744063 : cacheManager注入成功！！
+2018-01-02 16:32:50.540  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/member/index],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.api.ApiMemberController.index(javax.servlet.http.HttpServletRequest)
+2018-01-02 16:32:50.541  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/oauth/token],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.api.ApiPublicController.doLogin(com.netmatch.model.valid.ValidMember,org.springframework.validation.BindingResult)
+2018-01-02 16:32:50.543  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.AdminController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.543  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/delete],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.delete(java.lang.String[])
+2018-01-02 16:32:50.543  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.list(com.netmatch.model.console.Admin)
+2018-01-02 16:32:50.543  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/save],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.save(com.netmatch.model.console.Admin,org.springframework.validation.BindingResult)
+2018-01-02 16:32:50.543  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/from],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.AdminController.from(com.netmatch.model.console.Admin,org.springframework.ui.Model)
+2018-01-02 16:32:50.543  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/admin/savepwd],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.AdminController.editPwd(java.lang.String,java.lang.String)
+2018-01-02 16:32:50.544  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/upload/index]}" onto public java.lang.String com.netmatch.controller.console.FileUploadController.index()
+2018-01-02 16:32:50.544  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/log/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.LogController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.545  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/log/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.LogController.list(com.netmatch.model.console.Log)
+2018-01-02 16:32:50.545  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MainController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.546  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/main],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MainController.main()
+2018-01-02 16:32:50.546  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/main],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MainController.right(org.springframework.ui.Model)
+2018-01-02 16:32:50.546  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/wapper],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MainController.wapper()
+2018-01-02 16:32:50.548  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MenuController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.549  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/from],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.MenuController.add(com.netmatch.model.console.Menu,org.springframework.ui.Model)
+2018-01-02 16:32:50.549  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/delete],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.delete(java.lang.String[])
+2018-01-02 16:32:50.549  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.list()
+2018-01-02 16:32:50.549  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/save],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.save(com.netmatch.model.console.Menu,org.springframework.validation.BindingResult)
+2018-01-02 16:32:50.549  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/menu/listorder],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.MenuController.updateOrder(java.lang.String,java.lang.Integer)
+2018-01-02 16:32:50.550  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/403]}" onto public java.lang.String com.netmatch.controller.console.PublicController.unauthorizedRole()
+2018-01-02 16:32:50.550  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/login],methods=[POST]}" onto public java.lang.String com.netmatch.controller.console.PublicController.loginPost(com.netmatch.model.valid.ValidAdmin,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest)
+2018-01-02 16:32:50.550  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/login],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.PublicController.loginForm()
+2018-01-02 16:32:50.550  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/logout],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.PublicController.logout(org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-01-02 16:32:50.552  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.RoleController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.552  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/delete],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.delete(java.lang.String[])
+2018-01-02 16:32:50.553  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.list(com.netmatch.model.console.Role)
+2018-01-02 16:32:50.553  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/save],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.save(com.netmatch.model.console.Role,org.springframework.validation.BindingResult)
+2018-01-02 16:32:50.553  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/from],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.RoleController.from(com.netmatch.model.console.Role,org.springframework.ui.Model)
+2018-01-02 16:32:50.553  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/grant],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.grant(java.lang.String,java.lang.String[])
+2018-01-02 16:32:50.553  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/combobox],methods=[POST || GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.comboBox()
+2018-01-02 16:32:50.553  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/menutree],methods=[POST || GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.comboTree(java.lang.String)
+2018-01-02 16:32:50.554  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/grant],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.RoleController.grantForm(java.lang.String,org.springframework.ui.Model)
+2018-01-02 16:32:50.554  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/role/menulist],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.RoleController.menulist(java.lang.String)
+2018-01-02 16:32:50.555  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/regions/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.sys.RegionsController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.555  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/regions/list],methods=[POST],produces=[html/text;charset=UTF-8]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.sys.RegionsController.list(com.netmatch.model.console.sys.Regions)
+2018-01-02 16:32:50.555  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/regions/list2],methods=[POST],produces=[html/text;charset=UTF-8]}" onto public java.lang.String com.netmatch.controller.console.sys.RegionsController.list2(com.netmatch.model.console.sys.Regions)
+2018-01-02 16:32:50.555  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/image/fileupload],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.netmatch.controller.console.UploadImgController.uploadHeadImage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2018-01-02 16:32:50.556  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/member/index],methods=[GET]}" onto public java.lang.String com.netmatch.controller.console.UserController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.556  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/console/member/list],methods=[GET]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.console.UserController.list(com.netmatch.model.member.Member)
+2018-01-02 16:32:50.556  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[]}" onto public java.lang.String com.netmatch.controller.IndexController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.556  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String com.netmatch.controller.IndexController.forbidden()
+2018-01-02 16:32:50.557  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/index]}" onto public java.lang.String com.netmatch.controller.member.HomeController.index(org.springframework.ui.Model)
+2018-01-02 16:32:50.557  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/reg],methods=[GET]}" onto public java.lang.String com.netmatch.controller.member.HomeController.reg()
+2018-01-02 16:32:50.557  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/login],methods=[GET]}" onto public java.lang.String com.netmatch.controller.member.HomeController.login()
+2018-01-02 16:32:50.557  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.member.MemberController.doLogin(com.netmatch.model.valid.ValidMember,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-01-02 16:32:50.557  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/reg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.netmatch.controller.member.MemberController.doReg(com.netmatch.model.member.Member,org.springframework.validation.BindingResult)
+2018-01-02 16:32:50.558  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/logout],methods=[GET]}" onto public java.lang.String com.netmatch.controller.member.MemberController.logout()
+2018-01-02 16:32:50.560  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-02 16:32:50.560  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-02 16:32:50.625  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 16:32:50.625  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/app/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-02 16:32:50.724  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fb61f4a: startup date [Tue Jan 02 16:32:41 CST 2018]; root of context hierarchy
+2018-01-02 16:32:52.278  INFO 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-02 16:32:52.280  INFO 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-02 16:32:52.283  INFO 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-02 16:32:52.391  INFO 4144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2018-01-02 16:32:52.394  INFO 4144 --- [main] com.netmatch.Application                 : Started Application in 12.493 seconds (JVM running for 17.029)
+2018-01-02 16:36:36.042  INFO 4144 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-02 16:36:36.042  INFO 4144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-02 16:36:36.142  INFO 4144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 100 ms
+2018-01-02 16:36:36.193  INFO 4144 --- [http-nio-8000-exec-1] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2018-01-02 16:36:37.996  WARN 4144 --- [http-nio-8000-exec-9] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+2018-01-02 16:36:45.229  INFO 4144 --- [http-nio-8000-exec-10] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证开始
+2018-01-02 16:36:45.322  INFO 4144 --- [http-nio-8000-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-01-02 16:36:45.582 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:36:45.612 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:36:45.628 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:36:45.665  INFO 4144 --- [http-nio-8000-exec-10] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证未通过,堆栈轨迹如下
+2018-01-02 16:36:46.342  INFO 4144 --- [http-nio-8000-exec-10] c.n.core.shiro.CustomSessionListener     : onStart:4c9c907b-5bef-4ee2-9a16-7bfa94342d4d
+2018-01-02 16:36:54.841  INFO 4144 --- [http-nio-8000-exec-7] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证开始
+2018-01-02 16:36:54.843 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:36:54.844 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:36:54.848 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:36:54.849  INFO 4144 --- [http-nio-8000-exec-7] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证未通过,堆栈轨迹如下
+2018-01-02 16:37:02.955  INFO 4144 --- [http-nio-8000-exec-5] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证开始
+2018-01-02 16:37:02.956 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:37:02.957 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:37:02.960 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:37:02.960  INFO 4144 --- [http-nio-8000-exec-5] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证未通过,堆栈轨迹如下
+2018-01-02 16:37:15.256  INFO 4144 --- [http-nio-8000-exec-6] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证开始
+2018-01-02 16:37:15.258 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:37:15.258 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:37:15.260 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:37:15.261  INFO 4144 --- [http-nio-8000-exec-6] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证未通过,堆栈轨迹如下
+2018-01-02 16:41:37.971  INFO 4144 --- [http-nio-8000-exec-5] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证开始
+2018-01-02 16:41:38.095 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:41:38.096 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:41:38.101 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:41:38.112  INFO 4144 --- [http-nio-8000-exec-5] c.n.controller.console.PublicController  : 对用户[admin]进行登录验证..验证通过
+2018-01-02 16:41:38.114  INFO 4144 --- [http-nio-8000-exec-5] c.n.controller.console.PublicController  : 用户[admin]登录认证通过(这里可以进行一些认证通过后的一些系统参数初始化操作)
+2018-01-02 16:41:38.365 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.insert      : ==>  Preparing: INSERT INTO log ( log_id,log_user,log_time,log_ip,log_action ) VALUES( ?,?,?,?,? ) 
+2018-01-02 16:41:38.366 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.insert      : ==> Parameters: d8bdf8f152da4eb2a3ea2873dddb54e3(String), admin(String), 2018-01-02 16:41:38(String), 127.0.0.1(String), (String)
+2018-01-02 16:41:38.382 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.insert      : <==    Updates: 1
+2018-01-02 16:41:38.400 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:41:38.401 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:41:38.405 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:41:38.419 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==>  Preparing: select img_id, img_name, img_file_name, img_url, img_suffix, create_time, update_time, create_id, update_id, remarks, status from images where img_id = ? 
+2018-01-02 16:41:38.419 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==> Parameters: 53a9f2a5a1a1410c96fc019b27372e20(String)
+2018-01-02 16:41:38.422 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.ImageMapper.selectByPrimaryKey   : <==      Total: 1
+2018-01-02 16:41:38.422 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.selectAllMenu   : ==>  Preparing: select m.menu_id, m.menu_name, m.menu_type, m.menu_url, m.menu_code, m.parent_id, r.role_id as roleid ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from menu m left join role_menu rm on m.menu_id = rm.menu_id left join role r on r.role_id = rm.role_id left join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where m.menu_type <> 'button' order by m.listorder asc,m.created_at asc 
+2018-01-02 16:41:38.423 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.selectAllMenu   : ==> Parameters: 
+2018-01-02 16:41:38.437 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.selectAllMenu   : <==      Total: 22
+2018-01-02 16:41:38.973 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.A.selectCountByExample           : ==>  Preparing: SELECT COUNT(uid) FROM admin 
+2018-01-02 16:41:38.973 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.A.selectCountByExample           : ==> Parameters: 
+2018-01-02 16:41:38.975 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.A.selectCountByExample           : <==      Total: 1
+2018-01-02 16:41:38.977 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.RoleMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(role_id) FROM role 
+2018-01-02 16:41:38.977 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.RoleMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:41:38.978 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.RoleMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:41:38.978 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.MenuMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(menu_id) FROM menu 
+2018-01-02 16:41:38.979 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.MenuMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:41:38.980 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.MenuMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:41:57.532  INFO 4144 --- [http-nio-8000-exec-4] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:41:57.533 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:41:57.534 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:41:57.537 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:41:57.546  INFO 4144 --- [http-nio-8000-exec-4] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:41:57.547 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:41:57.548 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:41:57.550 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:41:57.810  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:41:57.810 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:41:57.810 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:41:57.812 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:41:57.814  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:41:57.815 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:41:57.815 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:41:57.817 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:41:58.041 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.m.MemberMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(*) FROM member 
+2018-01-02 16:41:58.041 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.m.MemberMapper.selectAll_COUNT     : ==> Parameters: 
+2018-01-02 16:41:58.043 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.m.MemberMapper.selectAll_COUNT     : <==      Total: 1
+2018-01-02 16:41:58.045 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.member.MemberMapper.selectAll      : ==>  Preparing: SELECT uid, account, password, salt, state, created_at, updated_at FROM member order by created_at asc limit ?,? 
+2018-01-02 16:41:58.046 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.member.MemberMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:41:58.047 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.member.MemberMapper.selectAll      : <==      Total: 1
+2018-01-02 16:42:15.625  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:15.626 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:15.627 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:15.629 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:15.630  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:15.631 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:15.631 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:15.634 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:15.785  INFO 4144 --- [http-nio-8000-exec-9] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:15.785 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:15.786 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:15.787 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:15.788  INFO 4144 --- [http-nio-8000-exec-9] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:15.789 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:15.789 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:15.791 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:15.792 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.m.MemberMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(*) FROM member 
+2018-01-02 16:42:15.792 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.m.MemberMapper.selectAll_COUNT     : ==> Parameters: 
+2018-01-02 16:42:15.794 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.m.MemberMapper.selectAll_COUNT     : <==      Total: 1
+2018-01-02 16:42:15.796 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.member.MemberMapper.selectAll      : ==>  Preparing: SELECT uid, account, password, salt, state, created_at, updated_at FROM member order by created_at asc limit ?,? 
+2018-01-02 16:42:15.797 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.member.MemberMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:42:15.799 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.member.MemberMapper.selectAll      : <==      Total: 1
+2018-01-02 16:42:51.197  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:51.198 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:51.198 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:51.200 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:51.205  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:51.205 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:51.205 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:51.207 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:51.597  INFO 4144 --- [http-nio-8000-exec-5] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:51.597 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:51.598 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:51.599 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:51.600  INFO 4144 --- [http-nio-8000-exec-5] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:51.601 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:51.601 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:51.602 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:54.680  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:54.681 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:54.681 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:54.683 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:54.684  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:54.684 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:54.685 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:54.686 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:54.862  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:54.863 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:54.863 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:54.864 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:54.865  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:54.865 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:54.865 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:54.868 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:54.870 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.m.MemberMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(*) FROM member 
+2018-01-02 16:42:54.870 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.m.MemberMapper.selectAll_COUNT     : ==> Parameters: 
+2018-01-02 16:42:54.871 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.m.MemberMapper.selectAll_COUNT     : <==      Total: 1
+2018-01-02 16:42:54.873 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.member.MemberMapper.selectAll      : ==>  Preparing: SELECT uid, account, password, salt, state, created_at, updated_at FROM member order by created_at asc limit ?,? 
+2018-01-02 16:42:54.873 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.member.MemberMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:42:54.877 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.member.MemberMapper.selectAll      : <==      Total: 1
+2018-01-02 16:42:56.643  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:56.643 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:56.644 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:56.646 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:56.648  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:56.648 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:56.649 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:56.651 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:56.876  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:56.876 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:56.877 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:56.878 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:42:56.879  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:42:56.879 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:42:56.879 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:42:56.880 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:43.208  INFO 4144 --- [http-nio-8000-exec-4] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:43.208 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:43.209 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:43.211 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:43.218  INFO 4144 --- [http-nio-8000-exec-4] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:43.219 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:43.219 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:43.220 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:43.507  INFO 4144 --- [http-nio-8000-exec-10] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:43.507 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:43.507 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:43.510 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:43.511  INFO 4144 --- [http-nio-8000-exec-10] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:43.511 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:43.512 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:43.513 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:43.516 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.AdminMapper.selectAll_COUNT      : ==>  Preparing: SELECT count(*) FROM admin 
+2018-01-02 16:43:43.516 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.AdminMapper.selectAll_COUNT      : ==> Parameters: 
+2018-01-02 16:43:43.521 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.AdminMapper.selectAll_COUNT      : <==      Total: 1
+2018-01-02 16:43:43.523 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.AdminMapper.selectAll      : ==>  Preparing: SELECT uid, username, password, salt, state, is_system, created_at, updated_at, img_id FROM admin order by created_at asc limit ?,? 
+2018-01-02 16:43:43.523 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.AdminMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:43:43.526 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.AdminMapper.selectAll      : <==      Total: 2
+2018-01-02 16:43:43.526 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:43:43.527 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: ad313d38fe9447ce863fe8584743a010(String)
+2018-01-02 16:43:43.528 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 0
+2018-01-02 16:43:43.529 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:43:43.529 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: 1e67f167d99c43f897ec6566043ad6ec(String)
+2018-01-02 16:43:43.532 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 1
+2018-01-02 16:43:56.977  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:56.978 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:56.978 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:56.981 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:56.988  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:56.988 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:56.989 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:56.990 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:57.323  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:57.323 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:57.324 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:57.325 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:57.326  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:43:57.327 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:43:57.327 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:43:57.329 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:43:57.331 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.RoleMapper.selectAll_COUNT       : ==>  Preparing: SELECT count(*) FROM role 
+2018-01-02 16:43:57.331 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.RoleMapper.selectAll_COUNT       : ==> Parameters: 
+2018-01-02 16:43:57.332 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.RoleMapper.selectAll_COUNT       : <==      Total: 1
+2018-01-02 16:43:57.334 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.RoleMapper.selectAll  : ==>  Preparing: SELECT role_id, role_name, role_desc, enable, created_at, updated_at FROM role order by created_at asc limit ?,? 
+2018-01-02 16:43:57.335 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.RoleMapper.selectAll  : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:43:57.336 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.RoleMapper.selectAll  : <==      Total: 2
+2018-01-02 16:43:57.337 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==>  Preparing: select m.* from role_menu rm left join menu m on rm.menu_id = m.menu_id where rm.role_id=? 
+2018-01-02 16:43:57.337 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==> Parameters: 36f1dd1296674fc08484c5abf6a5806b(String)
+2018-01-02 16:43:57.340 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : <==      Total: 7
+2018-01-02 16:43:57.340 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==>  Preparing: select m.* from role_menu rm left join menu m on rm.menu_id = m.menu_id where rm.role_id=? 
+2018-01-02 16:43:57.341 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==> Parameters: cbe8356d64a8433cb5dad5c7fccf8dce(String)
+2018-01-02 16:43:57.342 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : <==      Total: 4
+2018-01-02 16:44:04.756  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:04.757 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:04.758 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:04.759 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:04.760  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:04.761 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:04.761 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:04.763 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:04.986  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:04.987 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:04.987 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:04.988 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:04.989  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:04.989 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:04.989 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:04.990 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:06.691  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:06.692 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:06.692 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:06.695 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:06.696  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:06.696 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:06.697 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:06.699 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:06.892  INFO 4144 --- [http-nio-8000-exec-4] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:06.892 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:06.892 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:06.893 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:06.894  INFO 4144 --- [http-nio-8000-exec-4] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:06.894 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:06.895 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:06.896 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:06.898 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectAll_COUNT      : ==>  Preparing: SELECT count(*) FROM admin 
+2018-01-02 16:44:06.898 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectAll_COUNT      : ==> Parameters: 
+2018-01-02 16:44:06.899 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectAll_COUNT      : <==      Total: 1
+2018-01-02 16:44:06.900 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.AdminMapper.selectAll      : ==>  Preparing: SELECT uid, username, password, salt, state, is_system, created_at, updated_at, img_id FROM admin order by created_at asc limit ?,? 
+2018-01-02 16:44:06.901 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.AdminMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:44:06.902 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.AdminMapper.selectAll      : <==      Total: 2
+2018-01-02 16:44:06.902 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:44:06.903 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: ad313d38fe9447ce863fe8584743a010(String)
+2018-01-02 16:44:06.905 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 0
+2018-01-02 16:44:06.907 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:44:06.908 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: 1e67f167d99c43f897ec6566043ad6ec(String)
+2018-01-02 16:44:06.910 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 1
+2018-01-02 16:44:09.010  INFO 4144 --- [http-nio-8000-exec-10] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:09.011 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:09.012 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:09.014 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:09.015  INFO 4144 --- [http-nio-8000-exec-10] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:09.015 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:09.016 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:09.018 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:09.191  INFO 4144 --- [http-nio-8000-exec-9] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:09.191 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:09.191 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:09.192 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:09.193  INFO 4144 --- [http-nio-8000-exec-9] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:09.193 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:09.193 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:09.194 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:09.196 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.AdminMapper.selectAll_COUNT      : ==>  Preparing: SELECT count(*) FROM admin 
+2018-01-02 16:44:09.196 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.AdminMapper.selectAll_COUNT      : ==> Parameters: 
+2018-01-02 16:44:09.198 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.AdminMapper.selectAll_COUNT      : <==      Total: 1
+2018-01-02 16:44:09.200 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.AdminMapper.selectAll      : ==>  Preparing: SELECT uid, username, password, salt, state, is_system, created_at, updated_at, img_id FROM admin order by created_at asc limit ?,? 
+2018-01-02 16:44:09.200 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.AdminMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:44:09.204 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.AdminMapper.selectAll      : <==      Total: 2
+2018-01-02 16:44:09.205 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:44:09.205 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: ad313d38fe9447ce863fe8584743a010(String)
+2018-01-02 16:44:09.206 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 0
+2018-01-02 16:44:09.206 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:44:09.206 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: 1e67f167d99c43f897ec6566043ad6ec(String)
+2018-01-02 16:44:09.208 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 1
+2018-01-02 16:44:10.383  INFO 4144 --- [http-nio-8000-exec-5] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:10.384 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:10.384 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:10.386 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:10.387  INFO 4144 --- [http-nio-8000-exec-5] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:10.388 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:10.388 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:10.390 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:10.554  INFO 4144 --- [http-nio-8000-exec-7] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:10.555 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:10.555 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:10.556 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:10.557  INFO 4144 --- [http-nio-8000-exec-7] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:10.557 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:10.558 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:10.559 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:10.560 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.RoleMapper.selectAll_COUNT       : ==>  Preparing: SELECT count(*) FROM role 
+2018-01-02 16:44:10.560 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.RoleMapper.selectAll_COUNT       : ==> Parameters: 
+2018-01-02 16:44:10.561 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.RoleMapper.selectAll_COUNT       : <==      Total: 1
+2018-01-02 16:44:10.564 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.RoleMapper.selectAll  : ==>  Preparing: SELECT role_id, role_name, role_desc, enable, created_at, updated_at FROM role order by created_at asc limit ?,? 
+2018-01-02 16:44:10.566 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.RoleMapper.selectAll  : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:44:10.568 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.RoleMapper.selectAll  : <==      Total: 2
+2018-01-02 16:44:10.569 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==>  Preparing: select m.* from role_menu rm left join menu m on rm.menu_id = m.menu_id where rm.role_id=? 
+2018-01-02 16:44:10.569 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==> Parameters: 36f1dd1296674fc08484c5abf6a5806b(String)
+2018-01-02 16:44:10.573 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.MenuMapper.selectMenuByRoleId    : <==      Total: 7
+2018-01-02 16:44:10.574 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==>  Preparing: select m.* from role_menu rm left join menu m on rm.menu_id = m.menu_id where rm.role_id=? 
+2018-01-02 16:44:10.574 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==> Parameters: cbe8356d64a8433cb5dad5c7fccf8dce(String)
+2018-01-02 16:44:10.576 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.MenuMapper.selectMenuByRoleId    : <==      Total: 4
+2018-01-02 16:44:11.390  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:11.390 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:11.391 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:11.393 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:11.400  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:44:11.400 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:44:11.400 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:44:11.402 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:44:11.427 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.427 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 0(String)
+2018-01-02 16:44:11.429 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 3
+2018-01-02 16:44:11.431 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.431 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 984909260a06410d9be37c300e3df09d(String)
+2018-01-02 16:44:11.433 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 1
+2018-01-02 16:44:11.434 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.434 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: e85b2fb3e6ee4d0a9711c577bc842821(String)
+2018-01-02 16:44:11.436 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.437 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.437 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 3ac96215e82f40b5bfe442e6828641df(String)
+2018-01-02 16:44:11.439 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 4
+2018-01-02 16:44:11.440 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.441 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 04d5b345edc8406db52bbf1329f26d58(String)
+2018-01-02 16:44:11.442 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.443 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.444 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: e0dde3b9227c471eb3bd2ba0a7fab131(String)
+2018-01-02 16:44:11.445 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 3
+2018-01-02 16:44:11.447 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.447 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 6580896645d046a0acf3c1194d7bbf8e(String)
+2018-01-02 16:44:11.448 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.449 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.450 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 85dad2bd9023451fab632dcfc4357d3b(String)
+2018-01-02 16:44:11.451 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.452 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.452 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 362923d31e064f84adb8c23ba91e54d8(String)
+2018-01-02 16:44:11.453 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.454 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.454 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 6cda978dc9404ba2bf5854b74735b0bc(String)
+2018-01-02 16:44:11.456 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 4
+2018-01-02 16:44:11.457 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.457 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: aab7966c97db4643a36cb5afa24be38b(String)
+2018-01-02 16:44:11.458 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.459 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.460 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 8a653e3fb15642d9be6aad13b02009fb(String)
+2018-01-02 16:44:11.461 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.462 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.462 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 2191c9efc2fa431bb427b81ad938e8aa(String)
+2018-01-02 16:44:11.463 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.464 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.465 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 9f41af1454d046b596023a2822c5078c(String)
+2018-01-02 16:44:11.466 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.467 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.467 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 736bdf0b9aec4c59928a530e34bd9aad(String)
+2018-01-02 16:44:11.469 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 4
+2018-01-02 16:44:11.470 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.471 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 1cc3d9ad04e4424db1bb086d1678925e(String)
+2018-01-02 16:44:11.472 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.472 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.473 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 1cc3d9ad04e4424rb1bb086d1678925e(String)
+2018-01-02 16:44:11.474 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.474 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.475 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: f4237d06c0c94906bdc04f5ed19cbaeb(String)
+2018-01-02 16:44:11.476 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.477 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.477 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: c5cca135ee534bfeb482fb04b9311982(String)
+2018-01-02 16:44:11.478 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:11.478 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.479 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: e5f52fe2115e46229c60803e478d2e9a(String)
+2018-01-02 16:44:11.480 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 1
+2018-01-02 16:44:11.481 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:44:11.481 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 00dc5c51e4824f49a30013385f680b0c(String)
+2018-01-02 16:44:11.482 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:44:38.060 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:44:38.060 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:44:38.061 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:44:38.062 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:44:38.062 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 0(Integer), 10(Integer)
+2018-01-02 16:44:38.064 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:44:46.758 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:44:46.759 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:44:46.760 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:44:46.762 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:44:46.762 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 70(Integer), 10(Integer)
+2018-01-02 16:44:46.764 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 2
+2018-01-02 16:45:02.786 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:02.787 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:02.788 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:02.790 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:02.790 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 60(Integer), 10(Integer)
+2018-01-02 16:45:02.797 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:04.937 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:04.938 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:04.939 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:04.941 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:04.941 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 50(Integer), 10(Integer)
+2018-01-02 16:45:04.944 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:05.454 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:05.454 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:05.456 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:05.457 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:05.458 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 40(Integer), 10(Integer)
+2018-01-02 16:45:05.460 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:05.891 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:05.891 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:05.893 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:05.894 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:05.895 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 30(Integer), 10(Integer)
+2018-01-02 16:45:05.897 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:06.074 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:06.074 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:06.075 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:06.077 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:06.077 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 20(Integer), 10(Integer)
+2018-01-02 16:45:06.079 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:06.259 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:06.260 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:06.262 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:06.262 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:06.263 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 10(Integer), 10(Integer)
+2018-01-02 16:45:06.265 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:06.429 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:06.429 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:06.431 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:06.433 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:06.433 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 0(Integer), 10(Integer)
+2018-01-02 16:45:06.437 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:06.617 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:06.617 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:06.619 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:06.620 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:06.620 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 70(Integer), 10(Integer)
+2018-01-02 16:45:06.622 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 2
+2018-01-02 16:45:07.170 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:07.170 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:07.178 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:07.180 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:07.181 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 60(Integer), 10(Integer)
+2018-01-02 16:45:07.187 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:07.682 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:07.683 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:07.684 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:07.686 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:07.687 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 50(Integer), 10(Integer)
+2018-01-02 16:45:07.691 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:08.027 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:08.027 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:08.028 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:08.030 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:08.030 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 40(Integer), 10(Integer)
+2018-01-02 16:45:08.033 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:08.246 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:08.246 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:08.248 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:08.249 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:08.249 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 30(Integer), 10(Integer)
+2018-01-02 16:45:08.253 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:08.402 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:08.402 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:08.403 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:08.405 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:08.405 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 20(Integer), 10(Integer)
+2018-01-02 16:45:08.408 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:08.542 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:08.542 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:08.543 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:08.544 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:08.545 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 10(Integer), 10(Integer)
+2018-01-02 16:45:08.547 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:08.721 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:08.721 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:08.722 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:08.724 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:08.724 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 0(Integer), 10(Integer)
+2018-01-02 16:45:08.726 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:08.897 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:08.897 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:08.898 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:08.899 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:08.899 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 70(Integer), 10(Integer)
+2018-01-02 16:45:08.901 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 2
+2018-01-02 16:45:09.077 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:09.077 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:09.078 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:09.080 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:09.080 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 60(Integer), 10(Integer)
+2018-01-02 16:45:09.082 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:09.240 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:09.241 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:09.242 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:09.244 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:09.244 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 50(Integer), 10(Integer)
+2018-01-02 16:45:09.247 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:09.434 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:09.434 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:09.435 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:09.437 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:09.437 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 40(Integer), 10(Integer)
+2018-01-02 16:45:09.439 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:09.601 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:09.601 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:09.603 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:09.604 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:09.605 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 30(Integer), 10(Integer)
+2018-01-02 16:45:09.608 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:09.790 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:09.790 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:09.791 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:09.794 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:09.794 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 20(Integer), 10(Integer)
+2018-01-02 16:45:09.797 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:10.009 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:10.009 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:10.010 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:10.012 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:10.012 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 10(Integer), 10(Integer)
+2018-01-02 16:45:10.014 DEBUG 4144 --- [http-nio-8000-exec-9] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:10.209 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:10.230 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:10.231 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:10.232 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:10.233 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 0(Integer), 10(Integer)
+2018-01-02 16:45:10.234 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:10.393 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:10.393 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:10.395 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:10.396 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:10.397 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 70(Integer), 10(Integer)
+2018-01-02 16:45:10.398 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 2
+2018-01-02 16:45:10.574 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(*) FROM log 
+2018-01-02 16:45:10.574 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : ==> Parameters: 
+2018-01-02 16:45:10.575 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.LogMapper.selectAll_COUNT  : <==      Total: 1
+2018-01-02 16:45:10.577 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : ==>  Preparing: SELECT log_id, log_user, log_time, log_ip, log_action FROM log order by log_time asc limit ?,? 
+2018-01-02 16:45:10.577 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : ==> Parameters: 60(Integer), 10(Integer)
+2018-01-02 16:45:10.579 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.mapper.console.LogMapper.selectAll   : <==      Total: 10
+2018-01-02 16:45:25.887 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:45:25.887 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:45:25.889 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:45:25.891 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==>  Preparing: select img_id, img_name, img_file_name, img_url, img_suffix, create_time, update_time, create_id, update_id, remarks, status from images where img_id = ? 
+2018-01-02 16:45:25.891 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==> Parameters: 53a9f2a5a1a1410c96fc019b27372e20(String)
+2018-01-02 16:45:25.893 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.ImageMapper.selectByPrimaryKey   : <==      Total: 1
+2018-01-02 16:45:25.894 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.selectAllMenu   : ==>  Preparing: select m.menu_id, m.menu_name, m.menu_type, m.menu_url, m.menu_code, m.parent_id, r.role_id as roleid ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from menu m left join role_menu rm on m.menu_id = rm.menu_id left join role r on r.role_id = rm.role_id left join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where m.menu_type <> 'button' order by m.listorder asc,m.created_at asc 
+2018-01-02 16:45:25.895 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.selectAllMenu   : ==> Parameters: 
+2018-01-02 16:45:25.900 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.selectAllMenu   : <==      Total: 22
+2018-01-02 16:45:25.949 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.A.selectCountByExample           : ==>  Preparing: SELECT COUNT(uid) FROM admin 
+2018-01-02 16:45:25.949 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.A.selectCountByExample           : ==> Parameters: 
+2018-01-02 16:45:25.950 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.A.selectCountByExample           : <==      Total: 1
+2018-01-02 16:45:25.951 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.RoleMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(role_id) FROM role 
+2018-01-02 16:45:25.951 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.RoleMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:45:25.952 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.RoleMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:45:25.952 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(menu_id) FROM menu 
+2018-01-02 16:45:25.952 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:45:25.953 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:45:28.975 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:45:28.975 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:45:28.977 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:45:28.978 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==>  Preparing: select img_id, img_name, img_file_name, img_url, img_suffix, create_time, update_time, create_id, update_id, remarks, status from images where img_id = ? 
+2018-01-02 16:45:28.979 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==> Parameters: 53a9f2a5a1a1410c96fc019b27372e20(String)
+2018-01-02 16:45:28.981 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.ImageMapper.selectByPrimaryKey   : <==      Total: 1
+2018-01-02 16:45:28.982 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.selectAllMenu   : ==>  Preparing: select m.menu_id, m.menu_name, m.menu_type, m.menu_url, m.menu_code, m.parent_id, r.role_id as roleid ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from menu m left join role_menu rm on m.menu_id = rm.menu_id left join role r on r.role_id = rm.role_id left join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where m.menu_type <> 'button' order by m.listorder asc,m.created_at asc 
+2018-01-02 16:45:28.982 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.selectAllMenu   : ==> Parameters: 
+2018-01-02 16:45:28.988 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.selectAllMenu   : <==      Total: 22
+2018-01-02 16:45:29.036 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.A.selectCountByExample           : ==>  Preparing: SELECT COUNT(uid) FROM admin 
+2018-01-02 16:45:29.036 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.A.selectCountByExample           : ==> Parameters: 
+2018-01-02 16:45:29.037 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.A.selectCountByExample           : <==      Total: 1
+2018-01-02 16:45:29.038 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.RoleMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(role_id) FROM role 
+2018-01-02 16:45:29.038 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.RoleMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:45:29.039 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.RoleMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:45:29.040 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.MenuMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(menu_id) FROM menu 
+2018-01-02 16:45:29.040 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.MenuMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:45:29.041 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.MenuMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:48:40.700  INFO 4144 --- [http-nio-8000-exec-7] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:40.702 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:40.703 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:40.704 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:40.705  INFO 4144 --- [http-nio-8000-exec-7] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:40.706 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:40.706 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:40.707 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:40.929  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:40.930 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:40.930 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:40.931 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:40.932  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:40.932 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:40.932 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:40.933 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:40.934 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.m.MemberMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(*) FROM member 
+2018-01-02 16:48:40.934 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.m.MemberMapper.selectAll_COUNT     : ==> Parameters: 
+2018-01-02 16:48:40.936 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.m.MemberMapper.selectAll_COUNT     : <==      Total: 1
+2018-01-02 16:48:40.938 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.member.MemberMapper.selectAll      : ==>  Preparing: SELECT uid, account, password, salt, state, created_at, updated_at FROM member order by created_at asc limit ?,? 
+2018-01-02 16:48:40.938 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.member.MemberMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:48:40.939 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.member.MemberMapper.selectAll      : <==      Total: 1
+2018-01-02 16:48:42.587  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:42.588 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:42.588 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:42.590 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:42.591  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:42.591 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:42.591 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:42.593 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:42.850  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:42.850 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:42.850 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:42.851 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:42.852  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:42.852 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:42.852 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:42.854 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:42.855 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.m.MemberMapper.selectAll_COUNT     : ==>  Preparing: SELECT count(*) FROM member 
+2018-01-02 16:48:42.855 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.m.MemberMapper.selectAll_COUNT     : ==> Parameters: 
+2018-01-02 16:48:42.857 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.m.MemberMapper.selectAll_COUNT     : <==      Total: 1
+2018-01-02 16:48:42.858 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.member.MemberMapper.selectAll      : ==>  Preparing: SELECT uid, account, password, salt, state, created_at, updated_at FROM member order by created_at asc limit ?,? 
+2018-01-02 16:48:42.858 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.member.MemberMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:48:42.859 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.member.MemberMapper.selectAll      : <==      Total: 1
+2018-01-02 16:48:44.476  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:44.477 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:44.477 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:44.479 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:44.480  INFO 4144 --- [http-nio-8000-exec-8] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:44.480 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:44.481 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:44.483 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:44.697  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:44.697 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:44.698 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:44.699 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:44.700  INFO 4144 --- [http-nio-8000-exec-3] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:44.700 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:44.700 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:44.702 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:44.703 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.AdminMapper.selectAll_COUNT      : ==>  Preparing: SELECT count(*) FROM admin 
+2018-01-02 16:48:44.704 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.AdminMapper.selectAll_COUNT      : ==> Parameters: 
+2018-01-02 16:48:44.705 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.AdminMapper.selectAll_COUNT      : <==      Total: 1
+2018-01-02 16:48:44.706 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.AdminMapper.selectAll      : ==>  Preparing: SELECT uid, username, password, salt, state, is_system, created_at, updated_at, img_id FROM admin order by created_at asc limit ?,? 
+2018-01-02 16:48:44.706 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.AdminMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:48:44.708 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.console.AdminMapper.selectAll      : <==      Total: 2
+2018-01-02 16:48:44.709 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:48:44.709 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: ad313d38fe9447ce863fe8584743a010(String)
+2018-01-02 16:48:44.710 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 0
+2018-01-02 16:48:44.711 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:48:44.711 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: 1e67f167d99c43f897ec6566043ad6ec(String)
+2018-01-02 16:48:44.713 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 1
+2018-01-02 16:48:46.889 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:48:46.890 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:48:46.892 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:48:46.893 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==>  Preparing: select img_id, img_name, img_file_name, img_url, img_suffix, create_time, update_time, create_id, update_id, remarks, status from images where img_id = ? 
+2018-01-02 16:48:46.893 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==> Parameters: 53a9f2a5a1a1410c96fc019b27372e20(String)
+2018-01-02 16:48:46.896 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.c.ImageMapper.selectByPrimaryKey   : <==      Total: 1
+2018-01-02 16:48:46.897 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.selectAllMenu   : ==>  Preparing: select m.menu_id, m.menu_name, m.menu_type, m.menu_url, m.menu_code, m.parent_id, r.role_id as roleid ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from menu m left join role_menu rm on m.menu_id = rm.menu_id left join role r on r.role_id = rm.role_id left join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where m.menu_type <> 'button' order by m.listorder asc,m.created_at asc 
+2018-01-02 16:48:46.897 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.selectAllMenu   : ==> Parameters: 
+2018-01-02 16:48:46.902 DEBUG 4144 --- [http-nio-8000-exec-4] c.n.m.console.MenuMapper.selectAllMenu   : <==      Total: 22
+2018-01-02 16:48:46.967 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.A.selectCountByExample           : ==>  Preparing: SELECT COUNT(uid) FROM admin 
+2018-01-02 16:48:46.967 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.A.selectCountByExample           : ==> Parameters: 
+2018-01-02 16:48:46.969 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.A.selectCountByExample           : <==      Total: 1
+2018-01-02 16:48:46.969 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.RoleMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(role_id) FROM role 
+2018-01-02 16:48:46.969 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.RoleMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:48:46.970 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.RoleMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:48:46.970 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.MenuMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(menu_id) FROM menu 
+2018-01-02 16:48:46.971 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.MenuMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:48:46.972 DEBUG 4144 --- [http-nio-8000-exec-10] c.n.m.c.MenuMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:48:49.763  INFO 4144 --- [http-nio-8000-exec-5] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:49.764 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:49.764 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:49.766 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:49.767  INFO 4144 --- [http-nio-8000-exec-5] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:49.768 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:49.768 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:49.770 DEBUG 4144 --- [http-nio-8000-exec-5] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:49.980  INFO 4144 --- [http-nio-8000-exec-7] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:49.980 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:49.981 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:49.982 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:49.982  INFO 4144 --- [http-nio-8000-exec-7] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:49.983 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:49.983 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:49.984 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:49.985 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.AdminMapper.selectAll_COUNT      : ==>  Preparing: SELECT count(*) FROM admin 
+2018-01-02 16:48:49.985 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.AdminMapper.selectAll_COUNT      : ==> Parameters: 
+2018-01-02 16:48:49.986 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.AdminMapper.selectAll_COUNT      : <==      Total: 1
+2018-01-02 16:48:49.988 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.AdminMapper.selectAll      : ==>  Preparing: SELECT uid, username, password, salt, state, is_system, created_at, updated_at, img_id FROM admin order by created_at asc limit ?,? 
+2018-01-02 16:48:49.988 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.AdminMapper.selectAll      : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:48:49.989 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.console.AdminMapper.selectAll      : <==      Total: 2
+2018-01-02 16:48:49.990 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:48:49.991 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: ad313d38fe9447ce863fe8584743a010(String)
+2018-01-02 16:48:49.993 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 0
+2018-01-02 16:48:49.994 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.R.selectRoleListByAdminId        : ==>  Preparing: select r.role_id ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from role r inner join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where a.uid = ? and r.enable = 1 
+2018-01-02 16:48:49.994 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.R.selectRoleListByAdminId        : ==> Parameters: 1e67f167d99c43f897ec6566043ad6ec(String)
+2018-01-02 16:48:49.995 DEBUG 4144 --- [http-nio-8000-exec-7] c.n.m.c.R.selectRoleListByAdminId        : <==      Total: 1
+2018-01-02 16:48:50.920  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:50.920 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:50.921 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:50.922 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:50.923  INFO 4144 --- [http-nio-8000-exec-1] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:50.924 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:50.924 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:50.926 DEBUG 4144 --- [http-nio-8000-exec-1] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:51.076  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:51.076 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:51.076 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:51.077 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:51.078  INFO 4144 --- [http-nio-8000-exec-2] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:51.078 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:51.078 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:51.080 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:51.081 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.RoleMapper.selectAll_COUNT       : ==>  Preparing: SELECT count(*) FROM role 
+2018-01-02 16:48:51.081 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.RoleMapper.selectAll_COUNT       : ==> Parameters: 
+2018-01-02 16:48:51.083 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.RoleMapper.selectAll_COUNT       : <==      Total: 1
+2018-01-02 16:48:51.084 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.RoleMapper.selectAll  : ==>  Preparing: SELECT role_id, role_name, role_desc, enable, created_at, updated_at FROM role order by created_at asc limit ?,? 
+2018-01-02 16:48:51.084 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.RoleMapper.selectAll  : ==> Parameters: 0(Integer), 20(Integer)
+2018-01-02 16:48:51.086 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.mapper.console.RoleMapper.selectAll  : <==      Total: 2
+2018-01-02 16:48:51.087 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==>  Preparing: select m.* from role_menu rm left join menu m on rm.menu_id = m.menu_id where rm.role_id=? 
+2018-01-02 16:48:51.087 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==> Parameters: 36f1dd1296674fc08484c5abf6a5806b(String)
+2018-01-02 16:48:51.089 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : <==      Total: 7
+2018-01-02 16:48:51.090 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==>  Preparing: select m.* from role_menu rm left join menu m on rm.menu_id = m.menu_id where rm.role_id=? 
+2018-01-02 16:48:51.090 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : ==> Parameters: cbe8356d64a8433cb5dad5c7fccf8dce(String)
+2018-01-02 16:48:51.091 DEBUG 4144 --- [http-nio-8000-exec-2] c.n.m.c.MenuMapper.selectMenuByRoleId    : <==      Total: 4
+2018-01-02 16:48:51.908  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:51.909 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:51.909 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:51.911 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:51.912  INFO 4144 --- [http-nio-8000-exec-6] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-01-02 16:48:51.913 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==>  Preparing: select menu_code from menu 
+2018-01-02 16:48:51.913 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : ==> Parameters: 
+2018-01-02 16:48:51.915 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.console.MenuMapper.getALLMenuCode  : <==      Total: 20
+2018-01-02 16:48:51.918 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.918 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 0(String)
+2018-01-02 16:48:51.921 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 3
+2018-01-02 16:48:51.923 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.923 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 984909260a06410d9be37c300e3df09d(String)
+2018-01-02 16:48:51.925 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 1
+2018-01-02 16:48:51.927 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.927 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: e85b2fb3e6ee4d0a9711c577bc842821(String)
+2018-01-02 16:48:51.929 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.931 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.931 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 3ac96215e82f40b5bfe442e6828641df(String)
+2018-01-02 16:48:51.934 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 4
+2018-01-02 16:48:51.936 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.937 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 04d5b345edc8406db52bbf1329f26d58(String)
+2018-01-02 16:48:51.938 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.940 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.941 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: e0dde3b9227c471eb3bd2ba0a7fab131(String)
+2018-01-02 16:48:51.942 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 3
+2018-01-02 16:48:51.944 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.945 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 6580896645d046a0acf3c1194d7bbf8e(String)
+2018-01-02 16:48:51.946 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.947 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.947 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 85dad2bd9023451fab632dcfc4357d3b(String)
+2018-01-02 16:48:51.949 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.950 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.950 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 362923d31e064f84adb8c23ba91e54d8(String)
+2018-01-02 16:48:51.951 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.952 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.952 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 6cda978dc9404ba2bf5854b74735b0bc(String)
+2018-01-02 16:48:51.954 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 4
+2018-01-02 16:48:51.955 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.955 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: aab7966c97db4643a36cb5afa24be38b(String)
+2018-01-02 16:48:51.956 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.957 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.957 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 8a653e3fb15642d9be6aad13b02009fb(String)
+2018-01-02 16:48:51.958 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.959 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.959 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 2191c9efc2fa431bb427b81ad938e8aa(String)
+2018-01-02 16:48:51.960 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.961 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.962 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 9f41af1454d046b596023a2822c5078c(String)
+2018-01-02 16:48:51.963 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.964 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.964 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 736bdf0b9aec4c59928a530e34bd9aad(String)
+2018-01-02 16:48:51.965 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 4
+2018-01-02 16:48:51.966 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.966 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 1cc3d9ad04e4424db1bb086d1678925e(String)
+2018-01-02 16:48:51.967 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.968 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.968 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 1cc3d9ad04e4424rb1bb086d1678925e(String)
+2018-01-02 16:48:51.970 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.971 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.972 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: f4237d06c0c94906bdc04f5ed19cbaeb(String)
+2018-01-02 16:48:51.973 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.975 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.975 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: c5cca135ee534bfeb482fb04b9311982(String)
+2018-01-02 16:48:51.976 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:51.977 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.977 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: e5f52fe2115e46229c60803e478d2e9a(String)
+2018-01-02 16:48:51.979 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 1
+2018-01-02 16:48:51.979 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==>  Preparing: SELECT menu_id, menu_name, menu_type, menu_url, menu_code, parent_id, parent_ids, child_num, listorder, created_at, updated_at FROM menu WHERE (parent_id = ?) order by listorder asc, created_at desc 
+2018-01-02 16:48:51.979 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : ==> Parameters: 00dc5c51e4824f49a30013385f680b0c(String)
+2018-01-02 16:48:51.980 DEBUG 4144 --- [http-nio-8000-exec-6] c.n.m.c.MenuMapper.selectByExample       : <==      Total: 0
+2018-01-02 16:48:54.956 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.c.AdminMapper.selectByUsername     : ==>  Preparing: select * from admin where username = ?; 
+2018-01-02 16:48:54.956 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.c.AdminMapper.selectByUsername     : ==> Parameters: admin(String)
+2018-01-02 16:48:54.958 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.c.AdminMapper.selectByUsername     : <==      Total: 1
+2018-01-02 16:48:54.959 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==>  Preparing: select img_id, img_name, img_file_name, img_url, img_suffix, create_time, update_time, create_id, update_id, remarks, status from images where img_id = ? 
+2018-01-02 16:48:54.959 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.c.ImageMapper.selectByPrimaryKey   : ==> Parameters: 53a9f2a5a1a1410c96fc019b27372e20(String)
+2018-01-02 16:48:54.962 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.c.ImageMapper.selectByPrimaryKey   : <==      Total: 1
+2018-01-02 16:48:54.962 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.selectAllMenu   : ==>  Preparing: select m.menu_id, m.menu_name, m.menu_type, m.menu_url, m.menu_code, m.parent_id, r.role_id as roleid ,r.role_name,r.enable,a.uid as adminid,a.username,a.state from menu m left join role_menu rm on m.menu_id = rm.menu_id left join role r on r.role_id = rm.role_id left join admin_role ar on r.role_id = ar.role_id left join admin a on a.uid = ar.admin_id where m.menu_type <> 'button' order by m.listorder asc,m.created_at asc 
+2018-01-02 16:48:54.963 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.selectAllMenu   : ==> Parameters: 
+2018-01-02 16:48:54.968 DEBUG 4144 --- [http-nio-8000-exec-8] c.n.m.console.MenuMapper.selectAllMenu   : <==      Total: 22
+2018-01-02 16:48:55.016 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.A.selectCountByExample           : ==>  Preparing: SELECT COUNT(uid) FROM admin 
+2018-01-02 16:48:55.016 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.A.selectCountByExample           : ==> Parameters: 
+2018-01-02 16:48:55.017 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.A.selectCountByExample           : <==      Total: 1
+2018-01-02 16:48:55.017 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.RoleMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(role_id) FROM role 
+2018-01-02 16:48:55.017 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.RoleMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:48:55.018 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.RoleMapper.selectCountByExample  : <==      Total: 1
+2018-01-02 16:48:55.018 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.MenuMapper.selectCountByExample  : ==>  Preparing: SELECT COUNT(menu_id) FROM menu 
+2018-01-02 16:48:55.018 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.MenuMapper.selectCountByExample  : ==> Parameters: 
+2018-01-02 16:48:55.019 DEBUG 4144 --- [http-nio-8000-exec-3] c.n.m.c.MenuMapper.selectCountByExample  : <==      Total: 1

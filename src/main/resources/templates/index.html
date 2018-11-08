@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="/js/jquery-1.8.2.min.js"></script>
+</head>
+<script th:inline="javascript">
+    var message = [[${message}]];
+    console.log(message);
+    function aaa() {
+        //alert($("#id1").val());
+        var id1=$("#id1").val();
+//        $("#listfrom").attr("action", "/index2");
+//        $("#listfrom").submit();
+        $.ajax({
+            type: "POST",
+            //dataType:'json',
+            url: "/index2",
+            data: {id1:id1},
+            success: function() {
+                location='index2?id1='+id1
+            }
+        });
+    }
+</script>
+<body>
+<p th:text="${pageHTML}">sdhfskfhskd</p>
+<p th:text="${message}">default message1</p>
+<p th:text="${bbb}">default message3</p>
+<p>default message</p>
+<!--<span th:text="${#calendars.format(c,'yyyy-MM-dd')}">13 May 2011</span>-->
+<div th:object="${g}">
+    <p>id: <span th:text="*{id}">Sebastian</span>.</p>
+    <p>cupSize: <span th:text="*{cupSize}">Pepper</span>.</p>
+    <p>age: <span th:text="*{age}">Saturn</span>.</p>
+</div>
+<input type="submit" value="Subscribe!" th:attr="value=${g.cupSize}"/>
+<!--<a href="www.baidu.com" th:href="@{/index3}">Product List</a>-->
+<a href="http://www.baidu.com" th:href="@{${url}}">Product List</a>
+<table>
+    <tr th:each="prod,iterStat : ${prods}">
+        <td th:text="${iterStat.count}">1</td>
+        <td th:text="${prod.id}">Onions</td>
+        <td th:text="${prod.cupSize}">2.41</td>
+        <td th:text="${prod.age}">yes</td>
+    </tr>
+</table>
+<form action="#" th:action="@{/index2}" th:method="post" id="listfrom">
+    <input type="text" name="id1" id="id1" value="gf" th:value="${aaa}"/>
+    <input type="submit" value="提交" />
+</form>
+</body>
+</html>

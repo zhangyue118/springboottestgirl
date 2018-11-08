@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script th:inline="javascript">
+    var message = [[${message}]];
+    console.log(message);
+</script>
+<body>
+<p>default message</p>
+<p th:text="${name}">default message</p>
+<a href="www.baidu.com" th:href="@{/index2?id1=14}">Product List</a>
+<a href="image/desert.jpg">Product Listwwwwww</a>
+<img src="image/desert.jpg" />
+</body>
+</html>
